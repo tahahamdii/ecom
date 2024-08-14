@@ -11,3 +11,5 @@ W
 +src/main/java/com/ecom/store/user/User.java,8\6\8627f4661883aacc3b7ba72d207e9e8fb1ee43aa
 d
 4src/main/java/com/ecom/store/EcomApiApplication.java,d\d\dd9b0651f1adbd17728ab67795a0ce859482459c
+[
++src/main/java/com/ecom/store/role/Role.java,d\c\dc41aca8ab1d6cc32fbc44715c4980fd39641fd9
