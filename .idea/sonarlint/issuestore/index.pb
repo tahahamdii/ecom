@@ -17,3 +17,7 @@ j
 :ecom/src/main/java/com/ecom/store/role/RoleRepository.java,2\f\2fb41820e74eac716437748603b74e6bf36bba8b
 j
 :ecom/src/main/java/com/ecom/store/user/UserRepository.java,f\5\f59392c773a3daacfced399f2a25dfe9b2b82617
+a
+1ecom/src/main/java/com/ecom/store/user/Token.java,5\7\5786d3beddfa1ee6606bb38302981dedfa7fbe84
+k
+;ecom/src/main/java/com/ecom/store/user/TokenRepository.java,9\7\97b96745fbda9d3d6f97fc9c27fd69869c40a2e6
