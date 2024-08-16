@@ -27,3 +27,5 @@ i
 9ecom/src/main/java/com/ecom/store/security/JwtFilter.java,6\3\63ecfe3062970e9ce4e01349eb1be11cc1dfd820
 h
 8ecom/src/main/java/com/ecom/store/config/BensConfig.java,d\1\d19b03fb3ffda7c0a7fbb8008b331d3f88f539d7
+v
+Fecom/src/main/java/com/ecom/store/security/UserDetailsServiceImpl.java,9\1\913ce786e28f6d5705a905e9ac723a91a5d0d526
