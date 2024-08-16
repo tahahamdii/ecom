@@ -1,7 +1,10 @@
 package com.ecom.store.security;
 
+import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.io.Decoders;
+import io.jsonwebtoken.security.Keys;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
@@ -10,13 +13,21 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.function.Function;
 
 public class JwtService {
 
-    private long jwtExpiration;
+    @Value("${application.security.jwt.expiration.}")
+    private long jwtExpiration ;
+    @Value("${application.security.jwt.secret-key}")
     private String secretKey;
-    public String extractUsername(String jwt) {
-            return null;
+    public String extractUsername(String token) {
+            return extractClaim(token, Claims::getSubject);
+    }
+
+    public <T> T extractClaim(String token, Function<Claims, T> claimsResolver) {
+        final Claims claims = extractAllClaims(token);
+        return claimsResolver.apply(claims);
     }
 
     public String generateToken(UserDetails userDetails) {
@@ -42,11 +53,13 @@ public class JwtService {
                 .signWith(getSignInKey())
                 .compact()
                 ;
-
+    }
+    public boolean isTokenValid(String token, UserDetails userDetails) {
+        final String username = extractUsername(token);
     }
     private Key getSignInKey(){
         byte[] keyBytes = Decoders.BASE64.decode(secretKey);
-        return null;
+        return Keys.hmacShaKeyFor(keyBytes);
     }
 
 }
