@@ -1,7 +1,9 @@
 
 N
-java:S6857",Correct this malformed property placeholder.(§ÁÍ©ûÿÿÿÿ8Ãå•á•2
-G
-java:S1172"*Remove this unused method parameter "jwt".(¹ú8ÉÙ“á•2
-M
-java:S1128"0Remove this unused import 'java.util.ArrayList'.(÷‰îƒ8×Ù“á•2
+java:S6857",Correct this malformed property placeholder.(§ÁÍ©ûÿÿÿÿ8‰¸»á•2
+^
+java:S1854:"<Remove this useless assignment to local variable "username".(±¨¼’ıÿÿÿÿ8–¸»á•2
+O
+java:S11729"2Remove this unused method parameter "userDetails".(§Á–ò8˜¸»á•2
+O
+java:S1481:"-Remove this unused "username" local variable.(±¨¼’ıÿÿÿÿ8™¸»á•2
