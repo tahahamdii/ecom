@@ -7,6 +7,7 @@ import com.ecom.store.user.Token;
 import com.ecom.store.user.TokenRepository;
 import com.ecom.store.user.User;
 import com.ecom.store.user.UserRepository;
+import jakarta.mail.MessagingException;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.security.crypto.password.PasswordEncoder;
@@ -27,7 +28,7 @@ public class AuthenticationService {
     @Value("${application.mailing.frontend.activation-url}")
     private String activationUrl;
 
-    public void register(RegistrationRequest request) {
+    public void register(RegistrationRequest request) throws MessagingException {
         var userRole = roleRepository.findByName("USER")
                 .orElseThrow(()-> new IllegalStateException("ROLE USER WAS NOT INIT"));
         var user = User.builder()
@@ -44,7 +45,7 @@ public class AuthenticationService {
 
     }
 
-    private void sendValidationEmail(User user) {
+    private void sendValidationEmail(User user) throws MessagingException {
         var newToken = generateAndSaveActivationToken(user);
         emailService.sendEmail(
                 user.getEmail(),
