@@ -1,13 +1,5 @@
 
-]
-java:S1854"@Remove this useless assignment to local variable "templateName".(Šº–Ä8È„¶«–2
-b
-java:S1854"@Remove this useless assignment to local variable "templateName".(ì½Êâøÿÿÿÿ8É„¶«–2
-g
-java:S1854#"ERemove this useless assignment to local variable "mimeMessageHelper".(ˆ¤‡­ÿÿÿÿÿ8É„¶«–2
-„
-java:S1172"gRemove these unused method parameters "to", "username", "confirmationUrl", "activationCode", "subject".(ü™öÄ8Ê„¶«–2
-N
-java:S1481"1Remove this unused "templateName" local variable.(ÓÇ’î8Ë„¶«–2
-X
-java:S1481#"6Remove this unused "mimeMessageHelper" local variable.(ˆ¤‡­ÿÿÿÿÿ8Î„¶«–2
+Y
+java:S18548"<Remove this useless assignment to local variable "template".(°úÈù8·üá«–2
+J
+java:S14818"-Remove this unused "template" local variable.(°úÈù8½üá«–2
