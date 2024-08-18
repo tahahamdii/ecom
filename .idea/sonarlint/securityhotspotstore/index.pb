@@ -37,3 +37,9 @@ q
 Aecom/src/main/java/com/ecom/store/auth/AuthenticationService.java,d\b\dbac97e1dde683d59341ea14d8a04d5b7ff23123
 o
 ?ecom/src/main/java/com/ecom/store/auth/RegistrationRequest.java,a\a\aaf2ef04fc5776648020af13cd4551f9a727a136
+i
+9ecom/src/main/java/com/ecom/store/email/EmailService.java,2\d\2d0f11d4507677f7f088cf5f87a26c24b92f072e
+m
+=ecom/src/main/java/com/ecom/store/auth/EmailTemplateName.java,1\e\1e0eac3d639d1b417e3a1bf078b6b8cf32095829
+n
+>ecom/src/main/java/com/ecom/store/email/EmailTemplateName.java,9\b\9b9e0fe3d9e985f50c92e6d54c13eb601d7d754c

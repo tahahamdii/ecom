@@ -1,5 +1,6 @@
 package com.ecom.store.auth;
 
+import com.ecom.store.email.EmailService;
 import com.ecom.store.role.RoleRepository;
 import com.ecom.store.user.Token;
 import com.ecom.store.user.TokenRepository;
@@ -20,6 +21,7 @@ public class AuthenticationService {
     private final PasswordEncoder passwordEncoder;
     private final UserRepository userRepository;
     private final TokenRepository tokenRepository;
+    private EmailService emailService;
 
     public void register(RegistrationRequest request) {
         var userRole = roleRepository.findByName("USER")
