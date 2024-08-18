@@ -7,6 +7,7 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
+import java.security.SecureRandom;
 import java.util.List;
 
 @Service
@@ -30,6 +31,29 @@ public class AuthenticationService {
                 .roles(List.of(userRole))
                 .build();
         userRepository.save(user);
+        sendValidationEmail(user);
 
     }
+
+    private void sendValidationEmail(User user) {
+        var newToken = generateAndSaveActivationToken(user);
+        // Send Email
+    }
+
+    private String generateAndSaveActivationToken(User user) {
+        String generatedToken = generateActivationCode(6);
+        return null;
+    }
+
+    private String generateActivationCode(int length) {
+        String characters = "0123456789";
+        StringBuilder codeBuilder = new StringBuilder();
+        SecureRandom secureRandom = new SecureRandom();
+        for (int i = 0; i < length; i++) {
+            int randomIndex = secureRandom.nextInt(characters.length());
+            codeBuilder.append(characters.charAt(randomIndex));
+        }
+        return null;
+    }
+
 }
