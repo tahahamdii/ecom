@@ -33,3 +33,7 @@ j
 :ecom/src/main/java/com/ecom/store/security/JwtService.java,8\c\8c191bfff1672091bdc8ede989125f9a1201c593
 t
 Decom/src/main/java/com/ecom/store/auth/AuthenticationController.java,1\b\1b16571213a5526b8ba19ebaa5c6f33c4bc60fdd
+q
+Aecom/src/main/java/com/ecom/store/auth/AuthenticationService.java,d\b\dbac97e1dde683d59341ea14d8a04d5b7ff23123
+o
+?ecom/src/main/java/com/ecom/store/auth/RegistrationRequest.java,a\a\aaf2ef04fc5776648020af13cd4551f9a727a136
