@@ -1,6 +1,8 @@
 package com.ecom.store.auth;
 
 import com.ecom.store.role.RoleRepository;
+import com.ecom.store.user.Token;
+import com.ecom.store.user.TokenRepository;
 import com.ecom.store.user.User;
 import com.ecom.store.user.UserRepository;
 import lombok.RequiredArgsConstructor;
@@ -8,6 +10,7 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
 import java.security.SecureRandom;
+import java.time.LocalDateTime;
 import java.util.List;
 
 @Service
@@ -16,7 +19,7 @@ public class AuthenticationService {
     private final RoleRepository roleRepository;
     private final PasswordEncoder passwordEncoder;
     private final UserRepository userRepository;
-
+    private final TokenRepository tokenRepository;
 
     public void register(RegistrationRequest request) {
         var userRole = roleRepository.findByName("USER")
@@ -42,7 +45,14 @@ public class AuthenticationService {
 
     private String generateAndSaveActivationToken(User user) {
         String generatedToken = generateActivationCode(6);
-        return null;
+        var token = Token.builder()
+                .token(generatedToken)
+                .createdAt(LocalDateTime.now())
+                .expiresAt(LocalDateTime.now().plusMinutes(15))
+                .user(user)
+                .build();
+        tokenRepository.save(token);
+        return generatedToken;
     }
 
     private String generateActivationCode(int length) {
@@ -53,7 +63,7 @@ public class AuthenticationService {
             int randomIndex = secureRandom.nextInt(characters.length());
             codeBuilder.append(characters.charAt(randomIndex));
         }
-        return null;
+        return codeBuilder.toString();
     }
 
 }
