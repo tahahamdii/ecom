@@ -1,12 +1,14 @@
 package com.ecom.store.auth;
 
 import com.ecom.store.email.EmailService;
+import com.ecom.store.email.EmailTemplateName;
 import com.ecom.store.role.RoleRepository;
 import com.ecom.store.user.Token;
 import com.ecom.store.user.TokenRepository;
 import com.ecom.store.user.User;
 import com.ecom.store.user.UserRepository;
 import lombok.RequiredArgsConstructor;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
@@ -22,6 +24,8 @@ public class AuthenticationService {
     private final UserRepository userRepository;
     private final TokenRepository tokenRepository;
     private EmailService emailService;
+    @Value("${application.mailing.frontend.activation-url}")
+    private String activationUrl;
 
     public void register(RegistrationRequest request) {
         var userRole = roleRepository.findByName("USER")
@@ -42,7 +46,14 @@ public class AuthenticationService {
 
     private void sendValidationEmail(User user) {
         var newToken = generateAndSaveActivationToken(user);
-        // Send Email
+        emailService.sendEmail(
+                user.getEmail(),
+                user.fullName(),
+                EmailTemplateName.ACTIVATE_ACCOUNT,
+                activationUrl,
+                newToken,
+                "Account Activated"
+        );
     }
 
     private String generateAndSaveActivationToken(User user) {
