@@ -47,3 +47,9 @@ q
 Aecom/src/main/java/com/ecom/store/auth/AuthenticationRequest.java,4\5\45cd7b79ec02f9e259ab4768e36871fd7ffa8746
 r
 Becom/src/main/java/com/ecom/store/auth/AuthenticationResponse.java,f\4\f4f5df7da5cb5b7376754714bab07163ae55fda2
+u
+Eecom/src/main/java/com/ecom/store/handler/GlobalExceptionHandler.java,9\5\957e944bdca6cc529f20e27ea03f8b9e343f74d2
+p
+@ecom/src/main/java/com/ecom/store/handler/ExceptionResponse.java,e\0\e0eff1bceae6af5dcd357bc17a1fa8305873b9e6
+q
+Aecom/src/main/java/com/ecom/store/handler/BusinessErrorCodes.java,4\5\450512a354448f4ba709555dc50fbb75b4af76e1
