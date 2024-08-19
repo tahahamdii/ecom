@@ -26,6 +26,7 @@ public class EcomApiApplication {
 				roleRepository.save(
 						Role.builder().name("USER").build()
 				);
+
 			}
 		};
 	}
