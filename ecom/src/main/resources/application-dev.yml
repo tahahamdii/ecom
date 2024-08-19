@@ -1,9 +1,11 @@
 
 spring:
+  main:
+    debug: true
   datasource:
     url: jdbc:postgresql://localhost:5432/ecomstore
-    username: taha
-    password: taha
+    username: username
+    password: password
     driver-class-name: org.postgresql.Driver
   jpa:
     hibernate:
