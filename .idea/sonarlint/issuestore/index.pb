@@ -31,3 +31,15 @@ j
 :ecom/src/main/java/com/ecom/store/security/JwtService.java,8\c\8c191bfff1672091bdc8ede989125f9a1201c593
 t
 Decom/src/main/java/com/ecom/store/auth/AuthenticationController.java,1\b\1b16571213a5526b8ba19ebaa5c6f33c4bc60fdd
+q
+Aecom/src/main/java/com/ecom/store/auth/AuthenticationService.java,d\b\dbac97e1dde683d59341ea14d8a04d5b7ff23123
+o
+?ecom/src/main/java/com/ecom/store/auth/RegistrationRequest.java,a\a\aaf2ef04fc5776648020af13cd4551f9a727a136
+i
+9ecom/src/main/java/com/ecom/store/email/EmailService.java,2\d\2d0f11d4507677f7f088cf5f87a26c24b92f072e
+n
+>ecom/src/main/java/com/ecom/store/email/EmailTemplateName.java,9\b\9b9e0fe3d9e985f50c92e6d54c13eb601d7d754c
+i
+9ecom/src/main/java/com/ecom/store/config/BeansConfig.java,c\7\c79723ccd8b05f391e1d3037ed7ca1e9c5271dea
+s
+Cecom/src/main/java/com/ecom/store/config/ApplicationAuditAware.java,9\a\9a01a06bc10f76da756b38cd3772e4ae928fdb6b
