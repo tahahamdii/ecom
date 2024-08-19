@@ -10,6 +10,7 @@ import com.ecom.store.user.UserRepository;
 import jakarta.mail.MessagingException;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
@@ -25,6 +26,7 @@ public class AuthenticationService {
     private final UserRepository userRepository;
     private final TokenRepository tokenRepository;
     private final EmailService emailService;
+    private final AuthenticationManager authenticationManager;
     @Value("${application.mailing.frontend.activation-url}")
     private String activationUrl;
 
@@ -80,4 +82,8 @@ public class AuthenticationService {
         return codeBuilder.toString();
     }
 
+    public AuthenticationResponse authenticate(AuthenticationRequest request) {
+
+        return null;
+    }
 }

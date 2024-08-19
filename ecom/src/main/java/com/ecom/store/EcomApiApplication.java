@@ -17,11 +17,15 @@ public class EcomApiApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(EcomApiApplication.class, args);
 	}
+
+
 	@Bean
-	public CommandLineRunner runner(RoleRepository roleRepository) {
+	public CommandLineRunner runner(RoleRepository roleRepository){
 		return args -> {
-			if (roleRepository.findByName("USER").isEmpty()) {
-				roleRepository.save(Role.builder().name("USER").build());
+			if(roleRepository.findByName("USER").isEmpty()){
+				roleRepository.save(
+						Role.builder().name("USER").build()
+				);
 			}
 		};
 	}
