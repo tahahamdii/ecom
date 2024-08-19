@@ -1,5 +1,7 @@
 
 spring:
+  main:
+    debug: true
   datasource:
     url: jdbc:postgresql://localhost:5432/ecomstore
     username: username

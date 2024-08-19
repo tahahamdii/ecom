@@ -43,3 +43,7 @@ i
 9ecom/src/main/java/com/ecom/store/config/BeansConfig.java,c\7\c79723ccd8b05f391e1d3037ed7ca1e9c5271dea
 s
 Cecom/src/main/java/com/ecom/store/config/ApplicationAuditAware.java,9\a\9a01a06bc10f76da756b38cd3772e4ae928fdb6b
+q
+Aecom/src/main/java/com/ecom/store/auth/AuthenticationRequest.java,4\5\45cd7b79ec02f9e259ab4768e36871fd7ffa8746
+r
+Becom/src/main/java/com/ecom/store/auth/AuthenticationResponse.java,f\4\f4f5df7da5cb5b7376754714bab07163ae55fda2
