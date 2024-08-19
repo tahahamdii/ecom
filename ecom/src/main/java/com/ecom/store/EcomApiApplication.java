@@ -18,6 +18,7 @@ public class EcomApiApplication {
 		SpringApplication.run(EcomApiApplication.class, args);
 	}
 
+
 	@Bean
 	public CommandLineRunner runner(RoleRepository roleRepository){
 		return args -> {
@@ -25,6 +26,7 @@ public class EcomApiApplication {
 				roleRepository.save(
 						Role.builder().name("USER").build()
 				);
+
 			}
 		};
 	}
