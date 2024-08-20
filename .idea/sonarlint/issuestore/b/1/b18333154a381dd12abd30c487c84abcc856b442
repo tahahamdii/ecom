@@ -1,8 +1,10 @@
 
-œ	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Õ»¡8ƒ«µŠ—2J$1d689836-f8cd-4081-88ca-5060d18cf057
+œ	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Õ»¡8ƒ«µŠ—2J$b8e4464c-7c27-4232-bdbd-c6bcdd622f05
+
+java:S1124"EReorder the modifiers to comply with the Java Language Specification.(ëĞ¯“ÿÿÿÿÿ8®ÆŠ—2J$0b4b365a-bdeb-499c-86b5-0b6c94e99532
 q
-java:S1068")Remove this unused "title" private field.(åõò¹ıÿÿÿÿ8•ĞÔà–2J$ff2700fd-c8b4-46f1-9fda-1811cc5b2877
+java:S1068")Remove this unused "title" private field.(åõò¹ıÿÿÿÿ8•ĞÔà–2J$f1d516a6-41c1-4d63-9f1c-53d24e9ed2eb
 r
-java:S1068"*Remove this unused "artist" private field.(†ğÖŠıÿÿÿÿ8–ĞÔà–2J$f78018e2-47d1-4bf7-a540-8bfba1621805
+java:S1068"*Remove this unused "artist" private field.(†ğÖŠıÿÿÿÿ8–ĞÔà–2J$d031a831-05f4-47b9-b1a7-9dd8f36ebdac
 u
-java:S1068"-Remove this unused "createdBy" private field.(†ÆÄÅùÿÿÿÿ8–ĞÔà–2J$ac7679db-da93-4510-9ba6-fb4ef857a25d
+java:S1068"-Remove this unused "createdBy" private field.(†ÆÄÅùÿÿÿÿ8–ĞÔà–2J$fc670367-13f2-4eda-8943-fac98979d157
