@@ -1,10 +1,8 @@
 
-	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(¨óÉô8ĞÔà–2J$6ab31dea-bec2-43c2-8f11-ee460e2cbf1a
-n
-java:S1068"&Remove this unused "id" private field.(â¼°Ñûÿÿÿÿ8•ĞÔà–2J$cacf216d-feed-4e7a-871a-84bb994ee05b
+	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(¨óÉô8ĞÔà–2J$6e9c8830-8353-4f76-9cbd-7b0a077f80f8
 q
-java:S1068")Remove this unused "title" private field.(åõò¹ıÿÿÿÿ8•ĞÔà–2J$07826eef-1199-4f52-859d-f4eeae822509
+java:S1068")Remove this unused "title" private field.(åõò¹ıÿÿÿÿ8•ĞÔà–2J$33cd66ee-f136-4fb1-b299-c96d0c006b45
 r
-java:S1068"*Remove this unused "artist" private field.(†ğÖŠıÿÿÿÿ8–ĞÔà–2J$1b8a1cac-5b23-4d51-8b7d-cf2b0f8312f8
+java:S1068"*Remove this unused "artist" private field.(†ğÖŠıÿÿÿÿ8–ĞÔà–2J$25debb81-42bd-4fe1-9961-ed7566c91f7b
 u
-java:S1068"-Remove this unused "createdBy" private field.(†ÆÄÅùÿÿÿÿ8–ĞÔà–2J$18f5edff-6ebe-4a34-a3c4-8d95ab6c117f
+java:S1068"-Remove this unused "createdBy" private field.(†ÆÄÅùÿÿÿÿ8–ĞÔà–2J$72a2abbe-4876-48e0-bd21-854d88ad2060
