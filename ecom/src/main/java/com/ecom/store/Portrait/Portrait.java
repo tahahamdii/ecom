@@ -1,14 +1,19 @@
-package com.ecom.store;
+package com.ecom.store.Portrait;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
 import org.springframework.data.annotation.CreatedDate;
+import org.springframework.data.annotation.Id;
 import org.springframework.data.annotation.LastModifiedDate;
 
 import java.time.LocalDateTime;
 
 @Entity
-public class portrait {
+public class Portrait {
+
+    @Id
+    @GeneratedValue
     private Integer id;
     private String title ;
     private String artist;
@@ -19,5 +24,6 @@ public class portrait {
     @Column(insertable = false)
     private LocalDateTime lastModifiedDate;
     private Integer createdBy;
+
 
 }
