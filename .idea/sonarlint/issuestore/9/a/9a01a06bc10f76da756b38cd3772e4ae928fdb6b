@@ -1,3 +1,5 @@
 
 _
-java:S2094"BRemove this empty class, write its code or make it an "interface".(ğÉï8•ùé¶–2
+java:S1854"BRemove this useless assignment to local variable "authentication".(­¦Ÿí8€¥ô±—2
+P
+java:S1481"3Remove this unused "authentication" local variable.(­¦Ÿí8„¥ô±—2
