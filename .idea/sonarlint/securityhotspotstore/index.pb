@@ -69,3 +69,5 @@ r
 Becom/src/main/java/com/ecom/store/feedback/FeedbackController.java,6\7\676a97a9470dafde3baa417e1cb7e9cefcc5b6ff
 o
 ?ecom/src/main/java/com/ecom/store/feedback/FeedbackService.java,f\d\fd5b18d42b0e5593ba93bb98094565a2526cd6c7
+o
+?ecom/src/main/java/com/ecom/store/feedback/FeedbackRequest.java,9\4\9495b6321281ecb937973875e0f862016e5c5cb0
